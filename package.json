@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy:site": "gh-pages -d dist",
+    "deploy:source": "node scripts/commit-source.js",    
+    "deploy": "npm run build && npm run deploy:site && npm run deploy:source"
+  },
 
   "dependencies": {
     "gh-pages": "^6.3.0",
