@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Docs from "./pages/Docs";
+import { docs } from "./utils/docsIndex";
 
 export default function App() {
   return (
@@ -8,8 +9,11 @@ export default function App() {
       <div style={{ display: "flex", minHeight: "100vh" }}>
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Navigate to="/docs/apache" />} />
-          <Route path="/docs/:topic" element={<Docs />} />
+          <Route
+            path="/"
+            element={<Navigate to={`/docs/${docs[0].slug}`} />}
+          />
+          <Route path="/docs/:slug" element={<Docs />} />
         </Routes>
       </div>
     </HashRouter>

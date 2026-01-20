@@ -1,19 +1,16 @@
 import { useParams } from "react-router-dom";
-import MarkdownViewer from "../components/MarkdownViewer";
+import ReactMarkdown from "react-markdown";
+import { docs } from "../utils/docsIndex";
 
 export default function Docs() {
-  const { topic } = useParams();
+  const { slug } = useParams();
+  const doc = docs.find(d => d.slug === slug);
 
-  const map = {
-    apache: "apache.md",
-    docker: "docker.md",
-  };
-
-  if (!map[topic]) return <div>Tutorial not found</div>;
+  if (!doc) return <div>Document not found</div>;
 
   return (
-    <div style={{ padding: 20, flex: 1 }}>
-      <MarkdownViewer file={map[topic]} />
+    <div style={{ padding: 24, maxWidth: 900 }}>
+      <ReactMarkdown>{doc.content}</ReactMarkdown>
     </div>
   );
 }
