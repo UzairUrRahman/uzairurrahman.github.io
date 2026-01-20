@@ -8,7 +8,13 @@
 
 **That's it — enjoy writing.**
 
-![Example Image](../docs/assets/1348246.png)
+![Example Image](../docs/images/1348246.png)
 
 
 <img src="../docs/assets/1348246.png" alt="Example Image" width="200" style="height:auto;">
+
+
+<img 
+    src="../docs/assets/1348246.png" 
+    alt="Example Image" 
+    style="width:200px; height:200px; object-fit:cover; border-radius:10px; display:block; margin:10px 0;">
