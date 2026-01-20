@@ -270,14 +270,7 @@ Please change the parent <Route path="${Q}"> to <Route path="${Q==="/"?"*":`${Q}
     
 4.  Add group? groupadd
     
-5.  Add user to group? usermod -aG`,H0=`# Apache2 Installation Tutorial
-
-This is a tutorial for installing Apache2.  
-You can add your own steps here in Markdown format.
-
-- Step 1: ...
-- Step 2: ...
-`,j0=`# DevOps Commands Cheat Sheet (With Real-World Examples)
+5.  Add user to group? usermod -aG`,H0="",j0=`# DevOps Commands Cheat Sheet (With Real-World Examples)
 
 A compact, practical, end-to-end DevOps reference
 
