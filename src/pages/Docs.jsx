@@ -8,9 +8,9 @@ export default function Docs() {
 
   if (!doc) return <div>Document not found</div>;
 
-  return (
-    <div style={{ padding: 24, maxWidth: 900 }}>
-      <ReactMarkdown>{doc.content}</ReactMarkdown>
-    </div>
-  );
+return (
+  <div className="markdown">
+    <ReactMarkdown>{doc.content}</ReactMarkdown>
+  </div>
+);
 }

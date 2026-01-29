@@ -7,16 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "deploy:site": "gh-pages -d dist",
-    "deploy:source": "node scripts/commit-source.js",    
+    "deploy:source": "node scripts/commit-source.js",
     "deploy": "npm run build && npm run deploy:site && npm run deploy:source"
   },
-
   "dependencies": {
     "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.12.0"
+    "react-router-dom": "^7.12.0",
+    "react-syntax-highlighter": "^16.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

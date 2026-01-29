@@ -1,0 +1,115 @@
+/* .markdown {
+  max-width: 900px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.markdown h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.markdown h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+.markdown h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.markdown p {
+  margin: 1rem 0;
+}
+
+.markdown ul {
+  margin-left: 1.25rem;
+  list-style: disc;
+}
+
+.markdown code {
+  background: #f3f4f6;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.markdown pre {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+} */
+
+
+
+.markdown {
+  max-width: 900px;
+  padding: 2rem 3rem;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Headings */
+.markdown h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.markdown h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+.markdown h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+/* Text */
+.markdown p {
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+.markdown ul {
+  margin-left: 1.5rem;
+  list-style: disc;
+}
+
+/* Inline code ONLY */
+.markdown p code,
+.markdown li code {
+  background: #f3f4f6;
+  color: #1f2937;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: monospace;
+}
+
+/* Code blocks */
+.markdown pre {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 1.25rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+/* Prevent inline code styles inside pre */
+.markdown pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}

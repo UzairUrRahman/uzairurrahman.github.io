@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import "../styles/markdown.css"
 
 export default function MarkdownViewer({ file }) {
   const [content, setContent] = useState("");
