@@ -12,6 +12,12 @@ They want:
 -   Trade-off logic
 -   Risk containment
 
+## ✅ If the Role Turned Out Non-Technical / Misaligned
+
+“The role ended up being far more operational and less technical than expected. I gave it an honest try, but I’m most effective in environments where I can work closely with engineering and architecture decisions.”
+
+CTOs like this — you’re choosing technical ownership.
+
 ## CTO-Level Answer Structure (Use This Every Time)
 
 Context → Risk → Options → Decision → Communication
